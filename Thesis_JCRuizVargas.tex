@@ -1,0 +1,198 @@
+\documentclass[a4paper,12pt,oneside]{report}
+% Escrever em Português
+%\usepackage[brazil]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+\usepackage{lscape}
+
+%%% Escolha das fontes
+% Charter
+%\usepackage[charter]{mathdesign}
+
+%%% Combo: Palatino + Helvetica + Courier, com EulerVM para matemática
+\usepackage{mathpazo}
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+\linespread{1.3} %%% Palatino needs more spacing.
+
+%----------------------------------------------------------------------------------------
+% 	ITEMIZATION
+%----------------------------------------------------------------------------------------
+%% Compact itemize
+\newenvironment{compact_itemize}{
+  \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parskip}{0pt}
+    }{\end{itemize}}
+%% Compact enumerate
+\newenvironment{compact_enumerate}{
+  \begin{enumerate}
+    \setlength{\itemsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parskip}{0pt}
+    }{\end{enumerate}}
+
+%%% Idem, mas pxfonts para matemática
+%\usepackage{pxfonts}
+%\usepackage[scaled=.95]{helvet}
+%\usepackage{courier}
+%\linespread{1.05} %%% Palatino needs more spacing.
+
+% Outras fontes
+%\usepackage{bookman} % Obsoleto, usar Kerkis
+%\usepackage{kmath,kerkis}
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage[utopia]{mathdesign}
+%\usepackage{mathptmx} % Isso se eu quisesse usar com Times!
+%\usepackage{mathrsfs}
+%\usepackage{eulervm} % Euler iria bem, mas não nesta tese...
+%\usepackage{libertine} % Fonte da Wikipedia!
+
+%
+% Geometria da página. Sugiro manter estas mesmas margens e 15 cm de espaço de texto.
+\usepackage[a4paper,pdftex,top=2.8cm,bottom=4cm,left=4.4cm,right=1.6cm]{geometry}
+\textwidth=15.0 true cm
+
+%
+% Table of Contents
+
+\setcounter{tocdepth}{2}
+\usepackage{sprace}
+\usepackage{multirow}
+
+%
+% Use isto pros headers
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername\ \thechapter.\ #1}{}}
+
+%% E menos espaço ao começar o capítulo
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\rmfamily\huge\mdseries}
+  {\chaptertitlename\ \thechapter}{20pt}{\huge}
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+
+% NEW SF
+\usepackage{sectsty}
+\allsectionsfont{\bfseries\sffamily} 
+
+% Linha Extra
+\newcommand{\linha}{\enlargethispage{1\baselineskip}}
+
+% Páginas bonitas
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\textit \thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+
+\newcommand{\at}[1]{ \colorbox{yellow}{\large \bf  ATEN\c C\~AO: } {\textcolor{red}{\bf #1}   }  }
+
+\fancypagestyle{fancyplain}{%
+\fancyhf{}
+\fancyhead[L]{\textit{\leftmark}}
+\fancyhead[R]{\textit{\thepage}}
+%\fancyfoot[C]{\today} % Use este fancyfoot pros drafts (data no pé da página)!
+\fancyfoot[C]{} % Use este fancyfoot (vazio) pra versão final!
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0pt}}
+
+
+%%%%%%%
+% Do the hypersetup
+%%%%%%%
+\usepackage{hyperref}
+\hypersetup{pdftitle={Search for new resonances in the merged jet + dilepton final state in CMS},
+            pdfauthor={Jos\'e Cupertino Ruiz Vargas},
+            pdfsubject={High Energy Physics},
+            pdfkeywords={High Energy Physics}
+            			{Particle Physics}
+            			{Hadron Colliders} 
+				{Extra Dimensions}
+				{Beyond the Standard Model},
+			colorlinks=true,
+			citecolor=blue,
+			linkcolor=blue,
+			urlcolor=blue			
+           }
+
+%\def\bib{\bibitem}
+
+\newcommand{\mj}{\ensuremath{m_\mathrm{J}}}
+\newcommand{\mZV}{\ensuremath{m_\mathrm{ZV}}}
+\newcommand{\T}{\strut}
+\newcommand{\tus}{\underline{{ }{ }}}
+
+%	http://tex.stackexchange.com/questions/9796/how-to-add-todo-notes
+\usepackage{xargs}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\presetkeys%
+    {todonotes}%
+    {inline,backgroundcolor=yellow}{}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=green,backgroundcolor=green!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+%%% This makes all the frontmatter stuff, sans the Table of Contents.
+\pagestyle{plain}
+\input 1_preambulo.tex
+
+%%% The Table of Contents and a new page
+\tableofcontents
+%\newpage
+
+%%%
+%%% Ok, ready to start. Reset headings and page numbers.
+%%%
+
+\pagestyle{fancyplain}
+\pagenumbering{arabic}
+
+%----------------------------------------------------------------------------------------
+% LIST OF TO-DO's
+% \listoftodos[Notes]
+%
+% \todo{ yellow }
+% \unsure{ red }
+% \change{ blue }  >>> Eduardo
+% \info{ green }
+% \improvement{ purple }
+%----------------------------------------------------------------------------------------
+
+\listoftables
+\listoffigures
+
+\input 2_intro.tex
+\input 3_cap2.tex
+\input 4_cap3.tex
+\input 5_strategy.tex
+\input 6_realdata.tex
+\input 8_bkgEstimation.tex
+\input 9_limits.tex
+\input 10_conclusion.tex
+
+\appendix
+\begin{appendix}
+\input 11_appendix.tex
+\end{appendix}
+
+\newpage
+\bibliography{tese} 	% Use the bibliography.bib file for the bibliography
+\bibliographystyle{unsrt} 		% Use the plainnat style of referencing
+
+%\bibliography{tese}{}
+%\bibliographystyle{plain}
+
+\end{document}
