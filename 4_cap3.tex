@@ -150,7 +150,7 @@ The particle-flow (PF) algorithm integrates measurements from all components of 
 \begin{equation}
 	d_{ij} = \min(k_{ti}^{2p}, k_{tj}^{2p}) \frac{(\eta_i - \eta_j)^2 + (\phi_i - \phi_j)^2}{R^2}.
 \end{equation}
-The transverse momentum, pseudo-rapidity, and azimuth angle of particle $i$, are $k_{ti}$, $\eta_i$, and $\phi_i$, respectively. The parameter $p=-1$ is characteristic of the anti-$k_T$ algorithm \cite{Cacciari:2008gp}, and ensures infrared-safe jets. The aperture of the jet is controlled with the parameter $R$, which takes the value $R=0.8$ for the case of fat jets.  
+The transverse momentum, pseudo-rapidity, and azimuth angle of particle $i$, are $k_{ti}$, $\eta_i$, and $\phi_i$, respectively. The parameter $p=-1$ is characteristic of the anti-$k_T$ algorithm \cite{Cacciari:2008gp}, and ensures infrared-safe jets. The aperture of the jet is controlled with the parameter $R$, which takes the value $R=0.8$ for the case of merged jets; the number $R=0.8$ is set by the CMS jet study group \cite{Khachatryan:2014vla}, and it is kept fix along the jet reconstruction routine for both data and simulation.
 
 \begin{figure}[ht]
 \centering
@@ -243,7 +243,7 @@ CMS makes use of a grid of computers connected together in an hierarchical organ
 \item Tier 3: Any small cluster of computers installed at an institute providing local access to the Grid.
 \end{compact_itemize}
 
-The S\~ao Paulo Research and Analysis Center (SPRACE) \cite{sprace} was implemented in 2003 to collaborate with the D$\O$ and CMS experiments. SPRACE hosts a T2 of the CMS computing structure --- the BR--SP--SPRACE ---, providing processing power of 25,200 HEPSPEC06 and 1,450 TB of storage all with a redundante 100 Gbps connection to USA where is located the Fermilab T1 which is our main point of connection to WLCG. During the development of this work we made extensive use of  the resources of the local CMS center at SPRACE.
+The S\~ao Paulo Research and Analysis Center (SPRACE) \cite{sprace} was implemented in 2003 to collaborate with the D$\O$ and CMS experiments. SPRACE hosts a T2 of the CMS computing structure --- the BR--SP--SPRACE ---, providing processing power of 25,200 HEPSPEC06 and 1,450 TB of storage, all with a redundant 100 Gbps link to the Fermilab T1 in the USA, which is our main connection to the WLCG. During the development of this work we made extensive use of  the resources of the local CMS center at SPRACE.
 
 
 

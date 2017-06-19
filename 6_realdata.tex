@@ -2,7 +2,8 @@
 \label{ch:realdata}
 
 \section{Primary Datasets}
-The Run 2 of the LHC started in 2015 after a long shutdown of two years, colliding protons at a center-of-mass energy of 13 TeV. After resuming operations, the CMS experiment collected proton-proton collision data equivalent to an integrated luminosity of 3.8 fb$^{-1}$. The fraction of certified data with good magnetic field and without HF --- Hadronic Forward detector --- was 2.7 fb$^{-1}$; including the HF, the certified luminosity reduces to 2.3 fb$^{-1}$. Our analysis only uses central objects in the range $|\eta|<2.5$, then we are allowed to use the whole set of certified data, {\it i.e.} 2.7 fb$^{-1}$ of integrated luminosity.
+The Run 2 of the LHC started in 2015 after a long shutdown of two years, colliding protons at a center-of-mass energy of 13 TeV. After resuming operations, the CMS experiment collected proton-proton collision data equivalent to an integrated luminosity of 3.8 fb$^{-1}$. The fraction of certified data with good magnetic field and without HF --- Hadronic Forward detector --- was 2.7 fb$^{-1}$. %; including the HF, the certified luminosity reduces to 2.3 fb$^{-1}$. 
+Our analysis only uses central objects in the range $|\eta|<2.5$, then we are allowed to use the whole set of certified data.%, {\it i.e.} 2.7 fb$^{-1}$ of integrated luminosity.
 
 We would like to remind the problems faced by the cryogenic system of the CMS magnet which restricted the amount of data collected with the standard 3.8~T field configuration. Despite those unexpected developments, we did our best to incorporate in this thesis the 2016 data but those efforts did not converge in time and, therefore, only results obtained with the 2015 data were included.
 
@@ -54,7 +55,7 @@ By convenience, the offline selection is chosen to accept events in the plateau 
 \section{Kinematic Distributions in the Control Region}
 According to the analysis strategy established in the previous chapter,  we initially split the data into signal and control regions with the aim of blinding the signal and restricting the offline analysis to the control regions. For this reason, the remaining part of this chapter will contain distributions excluding the signal region.  
 
-The offline analysis starts by selecting events with at least one reconstructed collision vertex within the distance of 24 mm along the beam axis and \linebreak 2 mm in the transverse plane to the beams from the nominal pp interaction point. The vertex requirement is standard in CMS analyses \cite{Chatrchyan:2014fea}, and it is fundamental to identify high level objects. For instance, the identification of charged leptons involves a requirement on the impact parameter between the lepton's track and the primary vertex, in order to veto leptons from cosmic rays.
+The offline analysis starts by selecting events with at least one reconstructed collision vertex within the distance of 24~cm along the beam axis and 2~cm in the transverse plane to the beams from the nominal pp interaction point. The vertex requirement is standard in CMS analyses \cite{Chatrchyan:2014fea}, and it is fundamental to identify high level objects. For instance, the identification of charged leptons involves a requirement on the impact parameter between the lepton's track and the primary vertex, in order to veto leptons from cosmic rays.
 
 The number of primary vertices per event is a wide distribution with mean value $\sim$~10, as shown in Fig. \ref{nVtx_VZ}. We may recall that in Monte Carlo (MC) samples the pileup is simulated by superimposing minimum bias events on top of the hard process; the inaccuracy of the pileup simulation is therefore compensated with a reweighting procedure. The pileup weights are obtained by dividing the distribution of the true number of interactions in data and MC, and then, these weights are applied to the MC distributions.
 
@@ -79,10 +80,10 @@ The MC distribution is a stacked histogram with different background components,
 \textbf{Category}    & \textbf{Data} & \textbf{MC}   &\textbf{Data/MC} \\[0.2cm]
  \hline\hline
  &&&\\[-0.2cm]
-Muon Low Purity      & 398           & 440           & 0.904 \\[0.2cm]
-Muon High Purity     &  67           & 67            & 1.011 \\[0.2cm]
-Electron Low Purity  & 271           & 335           & 0.808 \\[0.2cm]
-Electron High Purity &  44           & 53            & 0.825 \\[0.2cm]
+Muon Low Purity      & 398           & 440           & 0.90 \\[0.2cm]
+Muon High Purity     &  68           & 67            & 1.01 \\[0.2cm]
+Electron Low Purity  & 271           & 335           & 0.81 \\[0.2cm]
+Electron High Purity &  44           & 53            & 0.82 \\[0.2cm]
 \hline
 \end{tabular}
 \end{center}
@@ -127,7 +128,7 @@ The efficiency of this working point is evaluated in Fig. \ref{fig:eleid} using 
 
 On top of the identification working point we apply additional requirements such that the leading (subleading) electron satisfies \ptrans  $\geq 115 \, (50)$  GeV and $|\eta| < 2.4$; the pseudorapidity requirement ensures the electrons are inside the geometric acceptance of the detector. The \ptrans requirements in the offline selection are tighter than the online trigger, to avoid inefficiencies occurring at values lower than the trigger threshold.
 
-Additionally, the Monte Carlo events are corrected with isolation and identification scale factors that improve the agreement with real data. The computation of the scale factors is done directly by the EGamma physics object group, and the systematic uncertainty associated with this correction was carefully evaluated in our analysis as will be explain in Section \ref{sec:systematics}.
+Additionally, the Monte Carlo events are corrected with isolation and identification scale factors that improve the agreement with real data. The computation of the scale factors is done directly by the EGamma physics object group, and the systematic uncertainty associated with this correction was carefully evaluated in our analysis as will be explained in Section \ref{sec:systematics}.
 
 \subsection*{Muon Identification}
 The muon identification and their momentum assignment follow the recommendation of the muon physics object group \cite{muonPOG}. The high \ptrans working point is used for the leading candidate, specifically:
@@ -165,17 +166,16 @@ Distributions of \ptrans and mass of the leptonic Z candidate are shown in Fig. 
 The recommendations from the JetMET physics object group \cite{jetmetPOG} regarding jet identification include the following requirements:
 \begin{compact_itemize}
 \item Neutral Hadron Fraction $<$ 0.99;
-\item Neutral Electromagnetic (EM) Fraction $<$ 0.99;
+\item Electromagnetic (EM) Fraction $<$ 0.99;
 \item Number of Constituents $>$ 1;
 \item Charged Hadron Fraction $>$ 0;
 \item Charged Multiplicity $>$ 0;
-\item Charged EM Fraction $<$ 0.99.
 \end{compact_itemize}
-The jet identification is a loose requirement intended to reduce calorimeter noise. More important is the acceptance selection \ptrans $>$ 200 GeV, and $|\eta|<2.4$.
+The jet identification is a loose requirement intended to reduce calorimeter noise. More important is the acceptance selection \ptrans $>$ 200 GeV, and $|\eta|<2.4$. Besides the jet substructure techniques described in Sec. \ref{JetSection}, no further requirements are applied, {\it e.g.} b tagging \footnote{The combine secondary vertex for b tagging is usually applied in the low energy regime when the merged (AK8) jet can be resolved into two (AK4) jets.}.
 
-Figures \ref{ptZjj_VZ} and \ref{etaZjj_VZ} show the distributions of jet \ptrans and jet $\eta$ respectively. The $\Delta R$ separation between the jet and the closest lepton is shown in \ref{dRlepjet_VZ}. Figure \ref{massZjj_VZ} shows the distributions of the jet mass containing the gap in the signal region. The n-subjettiness variable $\tau_{21}$ is shown in Fig. \ref{tau21_VZ}. Finally, the distribution of the diboson invariant mass is shown in Fig. \ref{fig:candMass_VZ}.
+Figures \ref{ptZjj_VZ} and \ref{etaZjj_VZ} show the distributions of jet \ptrans and jet $\eta$ respectively. The $\Delta R$ separation between the jet and the closest lepton is shown in \ref{dRlepjet_VZ}. Figure \ref{massZjj_VZ} shows the distributions of the jet mass containing the gap in the signal region. The n-subjettiness variable $\tau_{21}$ is shown in Fig. \ref{tau21_VZ}. Finally, the distribution of the diboson invariant mass is shown in Fig. \ref{fig:candMass_VZ}. We recall that these distributions are blind, and the yields displayed in the legend of the plots account only the number of events in the control region.
 
-From the analysis of the control region we conclude that there are remarkable discrepancies between the real data and the Monte Carlo simulation, concerning the normalization and the shape of several kinematic distributions. In Section \ref{bkgEstimation}, we will try a data-driven technique to estimate the invariant mass in the signal region relying on a interpolation of the data from the control regions. The technique known as alpha method \cite{Mozer:2016wzi} will be introduced, and we will obtain final limits based on the results of the data-driven estimation rather than the Monte Carlo simulations.
+From the analysis of the control region we conclude that there are remarkable discrepancies between the real data and the Monte Carlo simulation, concerning the normalization and the shape of several kinematic distributions. In Chapter \ref{bkgEstimation}, we will try a data-driven technique to estimate the invariant mass in the signal region relying on a interpolation of the data from the control regions. The technique known as alpha method \cite{Mozer:2016wzi} will be introduced, and we will obtain final limits based on the results of the data-driven estimation rather than the Monte Carlo simulations.
 
 \begin{figure}[h]
 \begin{center}

@@ -1,15 +1,15 @@
 \chapter{Definition of the ZZ Semi-leptonic Channel}
 \section{General Overview}
 
-Experiments at the energy frontier shift boundaries and open new ways in the exploration of uncharted regions. The possibility of discovering new particles in unexplored regions is one of the motivations to perform data analysis in high energy physics. Although a completely model unspecific search can be performed \cite{CMS:2017yoc}, in general we focus on particular benchmark models, based either on theoretical motivations or on experimental hints. From a given benchmark model we can calculate which final states are accessible.%; ideally, the new physics processes should lead to a noteworthy signature. 
+Experiments at the energy frontier shift boundaries and open new ways in the exploration of uncharted regions. The possibility of discovering new particles in unexplored regions is one of the motivations to perform data analysis in high energy physics. Although a completely model-independent search can be performed \cite{CMS-PAS-EXO-14-016}, in general we focus on particular benchmark models, based either on theoretical motivations or on experimental hints. From a given benchmark model we can calculate which final states are accessible.%; ideally, the new physics processes should lead to a noteworthy signature. 
 
-When doing a experimental search for physics beyond the standard model, events dominated by the new physics process are called signal events, while events dominated by standard model processes with the same signature are called background events. In general, standard model processes have much larger cross-sections than the posited signal process; therefore, we have to apply selection requirements that preserve a large fraction of the signal while reducing the standard model background. 
+When performing an experimental search for physics beyond the standard model, events dominated by the new physics process are called signal events, while events dominated by standard model processes with the same signature are called background events. In general, standard model processes have much larger cross-sections than the posited signal process; therefore, we have to apply selection requirements that preserve a large fraction of the signal while reducing the standard model background. 
 
 The remaining background has to be estimated, both from theoretical predictions and from data-driven methods. Deviations from the background estimation, if unexplained by systematic uncertainties, can be indicative of new physics processes and the compatibility of those observations has to be checked with new signal hypotheses. In the absence of deviations, on the other hand, confidence limits can be used to set constraints on the theoretical models. 
 
 \section{Decay Chain and Final State}
 
-This thesis project started in 2013, two years in advance of the LHC Run 2. By the time, we defined a general strategy targeting the search for heavy resonances decaying into pairs of boosted vector bosons. Previous CMS analyses performed during the Run 1 \cite{Khachatryan:2014gha} suggested an interesting excess around 1.8 TeV in the invariant mass of the diboson pair (Fig. \ref{2012result}), so there were some expectations in this particular topology.   
+This thesis project started in 2013, two years in advance of the LHC Run 2. By the time, we defined a general strategy targeting the search for heavy resonances decaying into pairs of boosted Z bosons. Previous CMS analyses performed during the Run 1 \cite{Khachatryan:2014gha} suggested an interesting excess around 1.8 TeV in the invariant mass of the diboson pair (Fig. \ref{2012result}), so there were some expectations in this particular topology.   
 
 \begin{figure}[h]
 \begin{center}
@@ -50,14 +50,12 @@ ZZ $\to$ 4$\ell$ & \phantom{xxx} & 0.01 \\
 \end{center}
 \end{figure}
 
-The separation between the Z boson decay products, measured in term of $\Delta R = \sqrt{(\Delta\eta)^2 + (\Delta\phi)^2}$, is shown in Fig. \ref{VZchannel} as function of the graviton mass. For high mass of the bulk graviton, the hadronization of two boosted quarks coming from one of the Z's will be reconstructed as a single jet. The pair of leptons that comes from the decay of the other Z boson are also expected to be close to each other. The final state of interest is therefore a dilepton plus a merged jet.
+The separation between the Z boson decay products, measured in term of $\Delta R = \sqrt{(\Delta\eta)^2 + (\Delta\phi)^2}$, is shown in Fig. \ref{VZchannel} as function of the graviton mass. For high mass of the bulk graviton, the hadronization of two boosted quarks coming from one of the Z's will be reconstructed as a single jet. The pair of leptons that come from the decay of the other Z boson are also expected to be close to each other. The final state of interest is therefore a dilepton plus a merged jet.
 
 \clearpage
 \section{Analysis Strategy}
 
-In order to confront the results obtained in the Run 1, the Run 2 version of the analysis should have used the very same software and analysis framework. However, the different accelerator conditions ($8 \rightarrow 13$ TeV) and the incorporation of a new CMS data format (AOD $\rightarrow$ MiniAOD) forced us to develop original analysis tools, giving rise to the SPRACE analysis framework \cite{spraceFramework}.
-
-%\todo{\large  I did not like this start!!! You must tell more general things in the beginning. Why is important to analyze data in general? How do you compare with theoretical predictions? Pu an overview about you are going to tell us in the chapter. Just after that you mention YOUR particular strategy to attack your problem. } 
+In order to confront the results obtained in the Run 1, the Run 2 version of the analysis should have used the very same software and analysis framework. However, the different accelerator conditions ($8 \rightarrow 13$ TeV) and the incorporation of a new CMS data format (AOD $\rightarrow$ MiniAOD) forced us to develop original analysis tools, giving rise to the SPRACE analysis framework.% \cite{spraceFramework}.
 
 The SPRACE framework handles CMS real data in MiniAOD format, as well as data from Monte Carlo simulations. Both real data and simulation need to be split into signal and background. For simulation, the separation of the signal from the background is straightforward because the events are labelled accordingly.
 
@@ -78,7 +76,7 @@ The separation of the signal in real data is a challenging problem that requires
 
 The separation between muon and electron channel is a standard choice among CMS analyses. In our case, the muon channel is more competitive than the electron channel providing more sensitivity limits. It is due to the fact that different components of the detector are used in the reconstruction of the objects, translating into different selection criteria and consequently, different efficiencies. 
 
-The split into high purity and low purity categories is another enhancement of the analysis. It takes advantage of the N-subjettiness discriminator introduced in Section \ref{JetSection} to characterize hadronic V jets. By definition, the high purity category contains a larger fraction of signal events than the low purity category. Despite being less efficient, the low purity category slightly improves the sensitivity of the final limit because it allows to retain some signal events in the situation when the expected background approaches to zero. %In our analysis, the expected background approaches to zero for high values of the diboson invariant mass, as will be shown later on.  
+The split into high purity and low purity categories is another enhancement of the analysis. It takes advantage of the N-subjettiness discriminator introduced in Section \ref{JetSection} to characterize hadronic V jets. By definition, the high purity category contains a larger fraction of signal events than the low purity category. Despite being less efficient, the low purity category slightly improves the sensitivity of the final limit because it allows to retain some signal events in the situation when the expected background is close to zero. %In our analysis, the expected background approaches to zero for high values of the diboson invariant mass, as will be shown later on.  
 
 The classification into signal and control region intends to reduce the bias in the estimation of the background. In a initial stage of the analysis, the kinematic distributions in the signal region cannot be shown, and only information from the control region is used for background estimation purposes. Only at the end of the analysis the signal region is revealed, and the predictions obtained previously are confronted with the real data.  
 
@@ -89,17 +87,17 @@ In the next section we introduce the selection criteria applied to select signal
 Semi-leptonic events in the boosted regime, characterized by low $\Delta R$ between the Z boson decay products, can be selected with the set of criteria presented in Table~\ref{tab:cutsummary}. The same selection criteria apply to both real data and simulation, and they are intended to select signal-like events and reject the background. Some justifications for these specific requirements are:
 
 \begin{compact_itemize}
-\item The High Level Trigger is based on the presence of a lepton to minimize purely hadronic backgrounds. Since the online reconstruction is optimized for speed instead of accuracy, we chose single lepton triggers to maximize the probability of selecting an event, even though eventually require two reconstructed leptons in the offline analysis.
+\item The High Level Trigger is based on the presence of a lepton to minimize purely hadronic backgrounds. Since the online reconstruction is optimized for speed instead of accuracy, we chose single lepton triggers to maximize the probability of selecting an event, even though we eventually require two reconstructed leptons in the offline analysis.
 	
 \item Electrons reconstructed in the calorimeter can be faked by QCD jets, requiring a high threshold in the transverse momentum, namely \ptrans $>$ 105 GeV.
 	
 %\item For muons, RPC detectors localized in the acceptance region $|\eta| < 2.1$ are responsible for the online selection.
 
-\item The offline selection in one of the electrons (muons) at \ptrans larger than 115 GeV (50 GeV), ensures events in the plateau of the trigger turn-on. The selection on the other lepton at \ptrans larger than 20 GeV is a standard CMS threshold applied to particle coming from electroweak processes.
+\item The offline selection of one of the electrons (muons) at \ptrans larger than 115 GeV (50 GeV), ensures events in the plateau of the trigger efficiency. The selection on the other lepton at \ptrans larger than 20 GeV is a standard CMS threshold applied to particles coming from electroweak processes.
 
 \item The dilepton \ptrans threshold at 170 GeV intends to select Z candidates in the boosted region. The mass window of the dilepton pair includes the nominal mass of the Z boson (91.2 GeV), and is wide enough to ensure that lepton energy/momentum scale effects can be essentially neglected.
 
-\item The remaining offline jet requirements are intended to select V jets, and reject purely hadronic jets. The invariant mass selection is a phase space cut that simply reduces the amount of data have to run over. Since we are interested only in graviton masses above 800 GeV, a diboson invariant mass selection above 600 GeV is safe to apply.
+\item The remaining offline jet requirements are intended to select V jets, and reject purely hadronic jets. The invariant mass selection reduces the amount of data to run over. Since we are interested only in graviton masses above 800 GeV, a diboson invariant mass selection above 600 GeV is applied.
 \end{compact_itemize}
 
 The V jet selections were gleaned from the Run 1 analysis. Figure \ref{fig:run1plots} shows that the jet mass does indeed have a peak at the value of the Z boson mass, while the $\tau_2/\tau_1$ ratio shows a clear separation between signal and background. Therefore we define two different classification criteria: one based on the jet substructure
@@ -113,14 +111,14 @@ and one based on the jet mass
 \item Control region: jets with $ 20 < m_j < 65 $ GeV or $ 135 < m_j < 220 $ GeV. 
 \end{compact_itemize}
 
-The event selection also includes many requirements on detector status, data quality, object identification, among others. The application of the full event selection on real data is described in Chapter \ref{ch:realdata}.
+The event selection also includes many requirements on the detector status, data quality, object identification, among others. The application of the full event selection on real data is described in Chapter \ref{ch:realdata}.
 
 
 \begin{figure}[p]
 \centering
 \includegraphics[width=0.6\textwidth]{figures/objects/makePrunedMassPlotForPAS.pdf}\\\vspace{0.5cm}
 \includegraphics[width=0.6\textwidth]{figures/objects/makeNSubjPlotForPAS.pdf}
-\caption[Run 1 analysis]{Jet pruned mass (top) and $\tau_2/\tau_1$ ratio (bottom) taken from the Run 1 analysis \cite{CMS:2013dfa}. The signal region is defined around the peak in the jet mass distribution. The high purity category includes low values of $\tau_{21}$, where the signal is concentrated.}
+\caption[Run 1 analysis]{Jet pruned mass (top) and $\tau_2/\tau_1$ ratio (bottom) taken from the Run 1 analysis \cite{CMS-PAS-EXO-12-022}. The signal region is defined around the peak in the jet mass distribution. The high purity category includes low values of $\tau_{21}$, where the signal is concentrated.}
 \label{fig:run1plots}
 \end{figure}
 
@@ -145,15 +143,15 @@ Muon channel      & \ptrans $> 45$ GeV and $|\eta|<2.1$  \T& \\
 \cline{1-1}
 Electron ID   & Loose working point  \T& \\
 Isolation       & Particle flow isolation  \T& \\
-Acceptance  & \ptrans$ > 115 $ GeV,  $|\eta|<2.5$    \T &  leading or second electron\\
-                     & \ptrans$ > 20 $ GeV,  $|\eta|<2.5$    \T  &  remaining electron\\
+Acceptance  & \ptrans$ > 20 $ GeV,  $|\eta|<2.5$    \T  &  \\
+Dielectron pair seed   & \ptrans$ > 115 $ GeV,  $|\eta|<2.5$    \T &  leading or second electron\\
 \hline
 \multicolumn{1}{c}{Muons\T}\\
 \cline{1-1}
 Muon ID       & High \ptrans or tracker high \ptrans            \T   & At least 1 high \ptrans \\
 Isolation       & Tracker isolation with inner track removal   \T   & \\
-Acceptance  & \ptrans$ > 50 $ GeV,  $|\eta|<2.1$            \T  &  leading or second muon\\
-                     & \ptrans$ > 20 $ GeV,  $|\eta|<2.4$           \T  &  remaining muon\\
+Acceptance  & \ptrans$ > 20 $ GeV,  $|\eta|<2.4$           \T  &  \\
+Dimuon pair seed   & \ptrans$ > 50 $ GeV,  $|\eta|<2.1$            \T  &  leading or second muon\\
 \hline
 \multicolumn{1}{c}{Dilepton selection\T}\\
 \cline{1-1}
@@ -184,14 +182,14 @@ Invariant mass & $M_{\rm VZ}>600$ GeV        \T& \\
 
 To optimize and test our selection, we use a set of simulated background and signal samples. For the final state of choice, the standard model processes that constitute the relevant background are Z+jets, diboson (WW + WZ + ZZ), and $t\bar{t}$. One advantage of the double lepton channel adopted in this search is the absence of QCD backgrounds due to the fact that leptons are not subject to strong interactions. 
 
-For the description of the Z+jets background, a set of samples were generated with the {\sc madgraph} event generator~\cite{Alwall:2014hca}. The samples are binned according to the variable HT, which is the sum of the transverse energies of partons at matrix-element level. The split in HT bins reduces the computational time specially for high values of this variable, where a re-weighting factor is used to increase the number of available events in the sample. In this way, we can explore this background for high values of the reconstructed diboson invariant mass, since it is correlated with HT. Samples of $t\bar{t}$ and SM diboson production are generated using {\sc powheg} 2~\cite{Nason:2004,Frixione:2007,Alioli:2008} and {\sc pythia} 8~\cite{PYTHIA6, PYTHIA8}, respectively.
+For the description of the Z+jets background, a set of samples were generated with the {\sc madgraph} event generator~\cite{Alwall:2014hca}. The samples are binned according to the variable HT, which is the sum of the transverse energies of partons at matrix-element level. The split in HT bins reduces the computational time specially for high values of this variable, where a re-weighting factor is used to increase the number of available events in the sample. In this way, we can explore this background for high values of the reconstructed diboson invariant mass, since it is correlated with HT. Samples of $t\bar{t}$ and SM diboson production are generated using {\sc powheg} 2~\cite{Nason:2004rx,Frixione:2007,Alioli:2008} and {\sc pythia} 8~\cite{PYTHIA6, PYTHIA8}, respectively.
 
 Bulk graviton signal events are generated with {\sc madgraph} setting $k/M_{Pl} = 0.5$; 
 under this condition, the natural width of the resonance is much smaller than the experimental resolution. Working with narrow resonances is convenient because we can easily extrapolate to lower values of the bulk graviton model parameter, since that would minimally affect the shape of the diboson invariant mass distribution.
 Parton showering and hadronization processes are simulated by interfacing the event generators to {\sc pythia} 8 with the CUETP8M1~\cite{Skands:2014pea} tune.
 The NNPDF 3.0 parton distribution functions (PDF)~\cite{Ball2015} are used to model the momentum distribution of the colliding partons inside the protons. For both signal and background Monte Carlo (MC) samples, events are simulated using a {\sc Geant4}-based model~\cite{GEANT4} of the CMS detector and processed using the same reconstruction algorithms as for real data. 
 
-Supplementary minimum bias interactions are added to the generated events in order to match the additional particle production observed in real data from the large number of pileup interactions. In this context, minimum bias events account the inelastic non-diffrative part of the total cross section. Assuming a proton-proton total cross section of $\sigma_{tot} \sim 100$~mb, the minimum bias component would be close to $2/3\,\sigma_{tot} \sim 70$~mb \cite{CMS:2016ael}.
+Supplementary minimum bias interactions are added to the generated events in order to match the additional particle production observed in real data from the large number of pileup interactions. In this context, minimum bias events account the inelastic non-diffrative part of the total cross section. Assuming a proton-proton total cross section of $\sigma_{tot} \sim 100$~mb, the minimum bias component would be close to $2/3\,\sigma_{tot} \sim 70$~mb \cite{CMS-PAS-FSQ-15-005}.
 
 %The additional particle production observed in real data due to the large number of pileup interactions is also simulated in the samples. In order to save computing time, instead of simulating the pileup for each individual event we employ a special library of events with pre-simulated interactions. The library contains minimum bias \footnote{In this context, minimum bias means the eikonalized description of hard QCD processes available in {\sc pythia} 8, intended to represent the almost totality of pileup events at the LHC.} events that simulate the pileup of $N$ events over the event of interest, we add the DIGIs of $N$ events from that set to the DIGIs of the event of interest. The total set of DIGIs is then passed onwards to the further steps of reconstruction and analysis.
 
@@ -242,7 +240,7 @@ As we mentioned earlier, the presence of two leptons in the final state reduces 
 \includegraphics[width=0.48\textwidth]{figures/objects/genlep2ptENP.pdf}\\
 \includegraphics[width=0.48\textwidth]{figures/objects/genZptMNP.pdf}
 \includegraphics[width=0.48\textwidth]{figures/objects/genZptENP.pdf}
-\caption[Signal characterization]{Z boson transverse momentum at generator level and leptons kinematics in the muon (left) and electron (right) channels. The signal corresponds to a bulk graviton of mass 1.6 GeV; the background corresponds to standard model processes described in Table \ref{tab:VZSamples}. All distributions are normalized to unity.}
+\caption[Signal characterization]{Z boson transverse momentum at generator level and leptons kinematics in the muon (left) and electron (right) channels. The signal corresponds to a bulk graviton of mass 1.6 TeV; the background corresponds to standard model processes described in Table \ref{tab:VZSamples}. All distributions are normalized to unity.}
 \label{fig:signalid}
 \end{figure}
 
@@ -260,7 +258,7 @@ A_2 &= \left(\frac{n_2}{\left| \alpha_2 \right|}\right)^{n_2} \cdot \exp\left(- 
 B_2 = \frac{n_2}{\left| \alpha_2 \right|}  - \left| \alpha_2 \right|\,.
 \end{eqnarray*}
 
-An interpolation procedure is performed to simulate intermediate mass points in order to search for narrow resonances over the continuous background by steps of 100 GeV, starting at 0.8 TeV up to 2.5 TeV. The signal shapes obtained after the interpolation procedure are shown in Fig. \ref{sigShapes}. At generator level the signal invariant mass would look like a narrow delta function and the width of the double crystal ball resembles the detector resolution; therefore, for higher values of invariant mass the detector resolution is systematically worse. 
+An interpolation procedure is performed to simulate intermediate mass points in order to search for narrow resonances over the continuous background by steps of 100 GeV, starting at 0.8 TeV up to 2.5 TeV. The signal shapes obtained after the interpolation procedure are shown in Fig. \ref{sigShapes}. At generator level the signal invariant mass would look like a narrow delta function so the width of the double crystal ball resembles the detector resolution; therefore, for higher values of invariant mass the detector resolution is systematically worse. 
 
 The sensitivity of the analysis to the presence of a bulk graviton signal directly depends on the selection efficiency, and in turn, the efficiency depends on the channel and category under consideration. As shown in Fig. \ref{selectionEff_VZ}, the selection efficiency of the muon channel is higher than the electron channel, and the high purity category outperforms the low purity category. 
 
@@ -282,7 +280,9 @@ The sensitivity of the analysis to the presence of a bulk graviton signal direct
 \end{center}
 \end{figure}
 
-A precise description of the analysis cut-flow in the muon and electron channels is provided in the Tables \ref{tab:cutFlowMu} and \ref{tab:cutFlowEl}, respectively. Besides serving as input for the calculation of the signal efficiency, the numbers in the cut-flow tables were important to cross-check the correct performance of the SPRACE analysis framework. The cross-check consisted in a synchronization with other analysis groups, one at the University of Virginia and other at the University of Taiwan. They independently produced identical cut-flow tables using their own analysis frameworks, and the results of the three groups ---Virginia, Taiwan, and SPRACE--- perfectly matched. 
+A precise description of the analysis cut-flow in the muon and electron channels is provided in the Tables \ref{tab:cutFlowMu} and \ref{tab:cutFlowEl}, respectively. In the tables, the step named dimuon (dielectron) pair involves the dimuon (dielectron) pair seed plus the dilepton selection defined in the Table \ref{tab:cutsummary}; these two requirements explain the large event drop observed in the electron channel, in comparison to the muon channel.
+
+Besides serving as input for the calculation of the signal efficiency, the numbers in the cut-flow tables were important to cross-check the correct performance of the SPRACE analysis framework. The cross-check consisted in a synchronization with other analysis groups, one at the University of Virginia and other at the University of Taiwan. They independently produced identical cut-flow tables using their own analysis frameworks, and the results of the three groups ---Virginia, Taiwan, and SPRACE--- perfectly matched. 
 
 %For a given lepton flavour, the total event selection efficiency is around 75--80\% for muons and 60--70\% for electrons. As we will see, the expected number of background events with high values of invariant mass is practically zero (Fig. \ref{fig:highmass_MVZ}); the maximization of the efficiency is particularly important in that regime.
 \begin{landscape}

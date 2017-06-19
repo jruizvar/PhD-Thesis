@@ -5,7 +5,7 @@
 
 Four basic forces mediate all known interactions among the particles of matter \cite{t_hooft_gauge_1980}. Electromagnetic and gravitational are infinite range forces, so they are familiar to everyone for their macroscopic effects. The two remaining forces, which are called the weak and the strong force, cannot be perceived directly because their influence extends no larger than the radius of an atomic nucleus. The strong force binds together the protons and neutrons in the nucleus, and glues the quarks to constitute hadrons. The weak force is mainly responsible for decay processes, characterized by a long lifetime and the large mass of the weak bosons that carry the interaction; the typical lifetime of particles decaying via strong interaction is $\sim 10^{-23}$ seconds, while decays via weak interaction can take $\sim 10^{-12}$ seconds or longer \cite{Halzen:1984mc}.
 
-The standard model (SM) \cite{Novaes:1999yn} of elementary particles describes the nature of the forces by means of non-abelian gauge theories \cite{Quigg:2013ufa}. Electromagnetic and weak forces are mediated by the gauge particles of the Glashow--Weinberg--Salam model \cite{Glashow:1961tr}, namely the massless photon and a triplet of massive vector bosons, the $W^+,W^{-}$, and $Z^0$. The strong force is attributed to the eight massless gluons of quantum chromodynamics. In additions there is one Higgs boson, which is massive and electrically neutral. This quantum field theories incorporate quantum mechanics and special relativity to describe three of the four fundamental interactions: strong, electromagnetic, and weak interactions. The gravitational interaction is far weaker and is not expected to contribute significantly to any processes at subatomic level.
+The standard model (SM) \cite{Novaes:1999yn} of elementary particles describes the nature of the forces by means of non-abelian gauge theories \cite{Quigg:2013ufa}. Electromagnetic and weak forces are mediated by the gauge particles of the Glashow--Weinberg--Salam model \cite{Glashow:1961tr}, namely the massless photon and a triplet of massive vector bosons, the $W^+,W^{-}$, and $Z^0$. The strong force is attributed to the eight massless gluons of quantum chromodynamics. In addition, there is one scalar Higgs boson, which is massive and electrically neutral. These quantum field theories incorporate quantum mechanics and special relativity to describe three of the four fundamental interactions: strong, electromagnetic, and weak interactions. The gravitational interaction is far weaker and is not expected to contribute significantly to any processes at subatomic level.
 
 The fundamental particles  of matter are six leptons and six flavors of quarks, each of the quarks being present in three colors (Fig. \ref{smplot}). There exist 12 fermions (6 quarks plus 6 leptons), 4 vector bosons ($W, Z$, photon, gluon), and one scalar field (Higgs) responsible for the mechanism of electroweak symmetry breaking (EWSB). Each particle has its own anti-particle related by charge conjugation. 
 
@@ -18,7 +18,7 @@ The fundamental particles  of matter are six leptons and six flavors of quarks, 
 
 Quarks are the constituents of composite particles called hadrons, which are bound states of quark--antiquark for the case of mesons ({\it e.g.}, $\pi^+, \pi^-, \pi^0$, etc.), or three--quark states for the case of baryons ({\it e.g.}, protons, neutrons, $\Delta^{++}$, etc.). Single quark states cannot be observed as free particles, have fractional electric charge, and a quantum number called ``color'', which is the source of the strong interaction. Gluons, the mediators of color flow in the strong interactions, carry eight combinations of color and anti-color. 
 
-Leptons, having the electron as the best known member, do not undergo strong interactions because they do not carry color. Besides the charged leptons, there are neutral leptons: the neutrinos. Neutrinos only interacts via the weak force and, consequently, rarely interact and their detection is usually inferred by energy imbalance in a specific reaction. 
+Leptons, having the electron as the best known member, do not undergo strong interactions because they do not carry color. Besides the charged leptons, there are neutral leptons: the neutrinos. Neutrinos only interact via the weak force, consequently, their detection in collider experiments is usually inferred by energy imbalance in a specific reaction. 
 
 \subsubsection*{Gauge Symmetry}
 
@@ -26,7 +26,7 @@ Gauge invariance is the mechanism that determines the dynamical forces among the
 \begin{equation}
 SU(3)_C \times SU(2)_L \times U(1)_Y\,. \label{group}
 \end{equation}
-The factor $SU(3)_C$ corresponds to the strong sector, carries the color charge, and generates $(3^2-1)$ gauge fields associated with the eight gluons. The factor $SU(2)_L\times U(1)_Y$ corresponds to the electroweak sector, carries iso-spin and hypercharge, and generates $(3+1)$ gauge fields associated with the weak bosons and the photon.
+The factor $SU(3)_C$ corresponds to the strong sector, carries the color charge, and generates $(3^2-1)$ gauge fields associated with the eight gluons. The factor $SU(2)_L\times U(1)_Y$ corresponds to the electroweak sector, carries isospin and hypercharge, and generates $(3+1)$ gauge fields associated with the weak bosons and the photon.
 
 \subsection{Strong Sector}
 Quantum chromodynamics (QCD) is the theory of the strong interactions between quarks and gluons, governed by the symmetry group $SU(3)_C$. The fundamental representation of $SU(3)_C$ is a triplet, so the three quark colors red, green, and blue, or $(r, g, b)$, form the fundamental representation:
@@ -38,28 +38,26 @@ In this representation, the $SU(3)_C$ generators are the Gell-Mann matrices deno
 \lagrangean_{QCD}=\sum_{q=u,d,s\ldots}\!\!\bar{q}(i\not\!\!D - m_q)q \: - \: \frac{1}{4}G_{\mu\nu}^a G^{a\mu\nu}
 \label{Lqcd}
 \end{equation}
-where the sum runs over the quark flavors up ($u$), down ($d$), strange ($s$), charm ($c$), bottom ($b$), and top ($t$). 
-
-The strength tensor of the gluon field $G_\mu^a$ is given by,
-\[
+where the sum runs over the quark flavors up ($u$), down ($d$), strange ($s$), charm ($c$), bottom ($b$), and top ($t$). The strength tensor of the gluon field $G_\mu^a$ is given by
+\begin{equation}
 G_{\mu\nu}^a = \partial_\mu G_\nu^a-\partial_\nu G_\mu^a-g_s f^{abc}G_\mu^bG_\nu^c
-\]
+\end{equation}
 where the structure constant $f^{abc}$ of the $SU(3)_C$ group is defined through 
-\[
+\begin{equation}
 [\lambda^a,\lambda^b]=2if^{abc}\lambda^c \; . 
-\]
+\end{equation}
 
-The covariant derivate is defined as
+\noindent The covariant derivate is defined as
 \begin{equation}
 D_\mu q = \Bigl(\partial_\mu +ig_s\frac{\lambda^a}{2}G_\mu^a\Bigr)q
 \end{equation}
 where $g_s$ is the coupling of the strong force. 
 
-The strong interactions have a characteristic energy scale $\Lambda\sim 200$ MeV interpreted as the energy at which the coupling constant diverges. The running of the coupling constant obtained by the renormalization group equation, at leading order of perturbation theory is given by
+The strong interactions have a characteristic energy scale $\Lambda\sim 200$ MeV interpreted as the energy at which the coupling constant diverges. The running of the coupling constant obtained by the renormalization group equation at leading order of perturbation theory is given by
 \begin{equation}
 \alpha_S(Q^2) = \frac{12\pi}{(33-2n_f)\log(Q^2/\Lambda^2)}
 \end{equation}
-where $n_f$ is the number of quark flavors and $Q^2$ the probed energy. At very large $Q^2$, which corresponding to small distances, $\alpha_S = g_s/4\pi$ becomes increasingly small. This phenomena is known as asymptotic freedom, property that allows perturbative expansion at small distances.
+where $n_f$ is the number of quark flavors and $Q^2$ the probed energy. At very large $Q^2$, corresponding to small distances, $\alpha_S = g_s/4\pi$ becomes increasingly small. This phenomena is known as asymptotic freedom, property that allows perturbative expansion at small distances.
 
 \subsection{Electroweak Sector}
 The 12 fundamental fermions are grouped in three generations:
@@ -103,11 +101,11 @@ e_{R}\:\:,\:\:u_R\:\:,\:\:d_{R}
 \end{equation*}
 since in the model the neutrinos are considered massless, there is no right-handed component for the neutrino.
 
-The subscripts $L$ and $R$ stand for left and right chiral component. For a Dirac spinor $f$ its chiral decomposition is 
+\noindent The subscripts $L$ and $R$ stand for left and right chiral component. For a Dirac spinor $f$ its chiral decomposition is 
 \begin{equation}
 f=f_L+f_R=P_Lf + P_Rf
 \end{equation} 
-where $P_{L,R}=(1\mp\gamma_5)/2$ are the left and right chiral projectors. Left and right fields belong to different representations of $SU(2)$ and exhibit different values of $U(1)_Y$ hypercharge, property summarize in Table \ref{SMY}. 
+where $P_{L,R}=(1\mp\gamma_5)/2$ are the left and right chiral projectors. Left and right fields belong to different representations of $SU(2)$ and exhibit different values of $U(1)_Y$ hypercharge, property summarized in Table \ref{SMY}. 
 
 \begin{table}[h]
 \centering
@@ -134,15 +132,14 @@ $e_R$  & $\mu_R$ & $\tau_R$                                              &  sing
 \label{SMY}
 \end{table}
 
-
-Using the notation
+In the following we use the notation
 \begin{equation}
 \psi_1=\left(\begin{array}{c}
 u \\ d    
 \end{array}\right)_{L} \:\:,\:\:
-\psi_2=u_R\:\:,\:\:\psi_3=d_{R}
+\psi_2=u_R\:\:,\:\:\psi_3=d_{R}\,.
 \end{equation}
-Here we consider only quarks of the first generation to derive the charged current, though the result can be generalized to include the other generations and leptons as well. The Lagrangian for fermions can be written 
+Here we consider only quarks of the first generation to derive the charge current, though the result can be generalized to include the other generations as well as the leptons. The Lagrangian for fermions can be written as
 \begin{equation}
 \lagrangean_{\text{fermion}}=\sum_{j=1}^{3} i\bar{\psi_j}\gamma^\mu D_\mu\psi_j
 \label{lfer}
@@ -174,9 +171,7 @@ The currents $J_3^\mu$ and $J_Y^\mu$ are
 J_3^\mu &= \sum_{f}\bar{f}\gamma^\mu [t_{f_L}^3P_L+t_{f_R}^3P_R]f \\
 J_Y^\mu &= \sum_{f}\bar{f}\gamma^\mu [y_{f_L}  P_L+y_{f_R}  P_R]f 
 \end{align}
-where $t_{f_L}^3$ ($t_{f_R}^3$) is the third component of weak isospin for the left (right) chiral component of fermion $f$. 
-
-For quarks of the first generation, 
+where $t_{f_L}^3$ ($t_{f_R}^3$) is the third component of weak isospin for the left (right) chiral component of fermion $f$; for quarks of the first generation, 
 \begin{equation}
 t_{u_L}^3=+\tfrac{1}{2}\,,\qquad t_{d_L}^3=-\tfrac{1}{2}\,,\qquad \text{and}\qquad t_{u_R}^3=t_{d_R}^3=0. 
 \end{equation}
@@ -205,10 +200,10 @@ with the chiral couplings
 \epsilon_L^1(f)=t_{f_L}^3-q_f\sin^2\theta_W \,,\qquad \epsilon_R^1(f)=t_{f_R}^3-q_f\sin^2\theta_W \,. \label{Chiralcoup}
 \end{equation}
 
-Charge-parity (CP) violation was first observed in 1964 \cite{Christenson:1964fg}, and became a necessary mechanism to explain $K$ and $B$ meson systems. The incorporation of CP violation effects in the standard model motivated the introduction of three fermion families by Kobayashi and Maskawa \cite{Kobayashi:1973fv}. Further details on the CKM matrix and the mixing effects can be found elsewhere \cite{Langacker:2010zza}. 
+According to the charge-parity (CP) symmetry, the laws of physics should be the same if a particle is interchanged with its antiparticle (C symmetry) while its spatial coordinates are inverted (P symmetry). CP violation was first observed in 1964 \cite{Christenson:1964fg}, and became a necessary mechanism to explain $K$ and $B$ meson systems. The incorporation of CP violation effects in the standard model motivated the introduction of three fermion families by Kobayashi and Maskawa \cite{Kobayashi:1973fv}. Further details on the CKM matrix and the mixing effects can be found elsewhere \cite{Langacker:2010zza}. 
 
 \subsection{The Higgs Mechanism}
-The weak bosons of the SM acquire mass through a spontaneous symmetry breaking in which 3 of the 4 generator of the electroweak sector are broken
+The weak bosons of the SM acquire mass through a spontaneous symmetry breaking in which 3 of the 4 generators of the electroweak sector are broken
 \begin{equation*}
 SU(2)_L\times U(1)_Y \rightarrow U(1)_{EM}\,.
 \end{equation*}
@@ -216,7 +211,7 @@ To illustrate the mechanism, consider the gauge group $G=SU(N)$, with $N-1$ diag
 \begin{equation}
 \Phi=\sum_{i=1}^{N^2-1}\varphi^i T_i
 \end{equation}
-where $\varphi^i$ are the real components of $\Phi$ and the $T_i$ are the fundamental ($N\times N$) representation matrices. When $\Phi$ acquires a VEV,  $\langle\Phi\rangle$, $G$ is broken to a subgroup associated with those generators which commute with $\langle\Phi\rangle$. The VEV $\langle\Phi\rangle$ can be diagonalized by an $SU(N)$ transformation, so that the $N-1$ diagonal generators remain unbroken.
+where $\varphi^i$ are the real components of $\Phi$ and the $T_i$ are the fundamental ($N\times N$) representation matrices. When $\Phi$ acquires a VEV,  $\langle\Phi\rangle$, $G$ is broken to a subgroup associated with those generators that commute with $\langle\Phi\rangle$. The VEV $\langle\Phi\rangle$ can be diagonalized by an $SU(N)$ transformation, so that the $N-1$ diagonal generators remain unbroken.
 
 The SM introduces a scalar Higgs doublet 
 \begin{equation}
@@ -250,9 +245,9 @@ The Higgs field also enters in the Yukawa Lagrangian (ignoring family indices)
 -\lagrangean_{Yuk} = h_d \overline{Q}_L\phi d_R + h_u\overline{Q}_L\tilde{\phi}u_R + h_e \overline{L}_L\phi e_R  + h.c.
 \end{equation}
 where 
-\[
-Q_L \equiv \left(\begin{tabular}{c} $u_L$ \\ $d_L$ \end{tabular}\right) \;\;\; \mbox{and}  \;\;\;  L_L \equiv \left(\begin{tabular}{c} $\nu_L$ \\ $e_L$ \end{tabular}\right)
-\]
+\begin{equation}
+Q_L \equiv \left(\begin{tabular}{c} $u_L$ \\ $d_L$ \end{tabular}\right) \;\;\; \mbox{and}  \;\;\;  L_L \equiv \left(\begin{tabular}{c} $\nu_L$ \\ $e_L$ \end{tabular}\right)\,.
+\end{equation}
 The parameters $h_d$, $h_u$, and $h_e$ are the Yukawa constants which are directly related with the mass of the fermions. The tilde field is defined by
 \begin{equation}
 \tilde{\phi}\equiv i\sigma^2\phi^*=\left(\begin{matrix} \phi^{0*} \\ -\phi^- \end{matrix} \right)
@@ -280,7 +275,7 @@ The Higgs mass receive quantum corrections from loops that contain bosons ($W,Z$
 \end{equation}
 where $\Lambda$ is the maximum energy for which the SM applies, or in other words, for energies larger than $\Lambda$ a new theory should be taken into account. 
 
-In principle, this scale can be as large as the Plank scale , that is,
+In principle, this scale can be as large as the Planck scale , that is,
 \begin{equation*}
 \Lambda\sim M_{\rm Planck} = \left(\frac{\hbar c}{G_{\rm Newton}}\right)^{1/2} \approx 1.2\times 10^{19}\:{\rm GeV} \; .
 \end{equation*}
@@ -309,13 +304,13 @@ The standard model is in very good agreement with all experimental data obtained
 	\item Existence of the color quantum number from different measurements: $R$, $\pi^0$ decay into photons,  anomaly cancelation, etc.; 
 	\item Discovery of $W^\pm$ and $Z^0$ at CERN (1983);
 	\item Discovery of the $\tau$ at SLAC (1975), $\Upsilon$ (b quark) at Fermilab (1977) and the top quark at Fermilab (1995);
-	\item Precise measurement of the $Z^0$, triple vector boson interaction, and the establishment of 3 families scenario at LEP (90's);
+	\item Precise measurement of the $Z^0$, triple vector boson interaction, and the establishment of 3-family scenario at LEP (90's);
 	\item Discovery of the Higgs boson, CERN (2012).
 \end{compact_itemize}
 
-Despite this great success, several proposals for the so-called physics beyond the standard model (BSM) \cite{Allanach:2006fy} have been proposed with the motivation of solving the fine-tuning associated with the quadratic divergence in the Higgs mass \cite{Bustamante:2009us}. These proposals involve, for instance, the supersymmetric models (SUSY) \cite{Martin:1997ns} and various forms of dynamical symmetry breaking and little Higgs models \cite{Ellis:2009su}. Some versions of theories with large extra dimensions \cite{Csaki:2004ay}, which allow the $W/Z$ bosons to propagate freely in the extra dimensions, giving rise to Kaluza-Klein \cite{Dienes:2002hg} excitations. Such excitations can also occur in the Randall-Sundrum models \cite{Randall:1999ee} and have motivated several experimental searches \cite{Chatrchyan:2012rva,Khachatryan:2014hpa,Khachatryan:2014gha,Khachatryan:2015ywa,Khachatryan:2016cfa,Khachatryan:2016sey}. 
+Despite this great success, some versions of the so-called physics beyond the standard model (BSM) theories \cite{Allanach:2006fy} have been proposed with the motivation of solving the fine-tuning associated with the quadratic divergence in the Higgs mass \cite{Bustamante:2009us}. These proposals involve, for instance, the supersymmetric models (SUSY) \cite{Martin:1997ns} and various forms of dynamical symmetry breaking and little Higgs models \cite{Ellis:2009su}. Some versions of theories with large extra dimensions \cite{Csaki:2004ay}, which allow the $W/Z$ bosons to propagate freely in the extra dimensions, giving rise to Kaluza-Klein \cite{Dienes:2002hg} excitations. Such excitations can also occur in the Randall-Sundrum models \cite{Randall:1999ee} and have motivated several experimental searches \cite{Chatrchyan:2012rva,Khachatryan:2014hpa,Khachatryan:2014gha,Khachatryan:2015ywa,Khachatryan:2016cfa,Khachatryan:2016sey}. 
 
-Several aspects of the physics beyond the standard model are been explored by LHC at the TeV scale. The B2G (Beyond 2 Generations) analysis group in CMS covers models of new physics featuring the decay of new resonances to heavy standard model objects such as top, $W$,  $Z$, or Higgs bosons. The B2G group maintains synergy with other analyses in TOP, SUSY, and EXO (exotica) physics groups. A summary of the main B2G searches is presented in Fig. \ref{B2Gsummary} which shows the observed limits at 95\% C.L. for the production of vector--like quarks, resonances decaying into heavy quarks and into a pair of vector bosons, and the search for excited quarks. The search for new physics phenomena is the one of the most important item of the LHC agenda during the next years of scheduled operation.
+Several aspects of the physics beyond the standard model are being explored by the LHC at the TeV scale. The B2G (Beyond 2 Generations) analysis group in CMS covers models of new physics featuring the decay of new resonances to heavy standard model objects such as top, $W$,  $Z$, or Higgs bosons. The B2G group maintains synergy with other analyses in TOP, SUSY, and EXO (exotica) physics groups. A summary of the main B2G searches is presented in Fig. \ref{B2Gsummary} which shows the observed limits at 95\% C.L. for the production of vector--like quarks, resonances decaying into heavy quarks and into a pair of vector bosons, and the search for excited quarks. The search for new physics phenomena is the one of the most important items of the LHC agenda during the next years of scheduled operation.
 
 \begin{figure}[htb!!]
 \centering
@@ -326,9 +321,9 @@ Several aspects of the physics beyond the standard model are been explored by LH
 
 \subsection{Extra Dimensions}
 
-An increasing number of experimentalists are actively exploring the possibility that extra spacetime dimensions might be discovered at the LHC  \cite{Csaki:2004ay}. Despite the energy scales associated to many models are considered unreachably now, the examination of curled-up spacetime dimensions is directly testable. We explore here some general properties of extra spacetime dimensions starting from the original Kaluza-Klein theory formulated back in the 1920's \cite{Kaluza:1921tu}. 
+An increasing number of experimentalists are actively exploring the possibility that extra spacetime dimensions might be discovered at the LHC  \cite{Csaki:2004ay}. Despite the energy scales associated to many models are considered unreachable, the examination of curled-up spacetime dimensions is directly testable. We explore here some general properties of extra spacetime dimensions starting from the original Kaluza-Klein theory formulated back in the 1920's \cite{Kaluza:1921tu}. 
 
-The Kaluza-Klein argument provides a way of unifying particles with different spins. Certain combination of different particles with different spins in four dimensions can be viewed as different components of a single particle in higher dimensions, with a spin associated with the higher-dimensional Lorentz group. As an example consider a vector field in five dimensions $V^{(5)} = (V_0, V_1, V_2, V_3, V_4)$. The first four dimensions can be identified as the usual four-dimensional spacetime --- $V^{(4)} = (V_0, V_1, V_2, V_3)$  --- and the remaining component as a scalar $\phi = V_4$. Thus, a single Lorentz vector representation in five dimensions has yielded both a spin-1 particle and a spin-0 particle in four dimensions. 
+The Kaluza-Klein argument provides a way of unifying particles with different spins. Certain combinations of different particles with different spins in four dimensions can be viewed as different components of a single particle in higher dimensions, with a spin associated with the higher-dimensional Lorentz group. As an example consider a vector field in five dimensions $V^{(5)} = (V_0, V_1, V_2, V_3, V_4)$. The first four dimensions can be identified as the usual four-dimensional spacetime --- $V^{(4)} = (V_0, V_1, V_2, V_3)$  --- and the remaining component as a scalar $\phi = V_4$. Thus, a single Lorentz vector representation in five dimensions has yielded both a spin-1 particle and a spin-0 particle in four dimensions. 
 
 %The case considered by Kaluza and Klein is more elaborated than the above example, as it is sketched in Fig. \ref{kkobs}. While a spin-two symmetric tensor field $g_{\mu\nu}^{(4)}$ is interpreted as the four-dimensional graviton, a spin-one massless vector field $A_\mu^{(4)}$ is interpreted as a photon. 
 
@@ -339,7 +334,7 @@ The Kaluza-Klein argument provides a way of unifying particles with different sp
 %\label{kkobs}
 %\end{figure}
 
-Four-dimensional gravity can indeed be unified with electromagnetism into five-dimensional gravity. While this approach succeeds in unifying both fundamental forces known in the 1920's, now we know that there are at least four fundamental interaction. Therefore, unification along these lines would require even more extra dimensions.
+Four-dimensional gravity can indeed be unified with electromagnetism into five-dimensional gravity. While this approach succeeds in unifying both fundamental forces known in the 1920's, now we know that there are at least four fundamental interactions. Therefore, unification along these lines would require even more extra dimensions.
 
 If any extra space dimensions exist they must be sufficiently small in order not to be observable. In other words, they must be compactified down to a small length scale. For instance, consider at every point in spacetime an additional circle of radius \textsf{\textit{R}} orthogonal to all of the known dimensions as it is illustrated in Fig. \ref{circle}. If \textsf{\textit{R}} is sufficiently small,  the extra dimension is essentially unobservable.
 
@@ -364,12 +359,12 @@ As an example, consider the circle $S^1$ satisfying the periodic boundary condit
 \label{orbifold}
 \end{figure}
 
-The compactification scheme allows to describe the extra dimension as a line segment between two four dimensional branes, known as Plank and TeV brane (Fig. \ref{branes}).
+The compactification scheme allows to describe the extra dimension as a line segment between two four dimensional branes, known as Planck and TeV brane (Fig. \ref{branes}).
 
 \begin{figure}[htb!!]
 \centering
 \includegraphics[scale=0.33]{figures/theory/branes.png}
-\caption[Gravity and weak branes]{The Gravity (Plank) and Weak (TeV) branes are 4-dimensional boundaries of the extra dimension $y$.}
+\caption[Gravity and weak branes]{The Gravity (Planck) and Weak (TeV) branes are 4-dimensional boundaries of the extra dimension $y$.}
 \label{branes}
 \end{figure}
 
@@ -377,17 +372,19 @@ The Randall-Sundrum (RS) model \cite{Randall:1999ee,Randall:1999vf} is a concret
 
 The metric satisfying these properties can be written as
 \begin{equation}
-	ds^2 = e^{-A(y)} \, \eta_{\mu\nu} \, dx^\mu \, dx^\nu  - dy^2\,.
+ds^2 = e^{-A(y)} \, \eta_{\mu\nu} \, dx^\mu \, dx^\nu  - dy^2\,.
 \end{equation}
-The amount of curvature along the extra dimension depends on the function $e^{-A(y)}$, which is the warping factor. The procedure to find the solution for the function $A(y)$ involves the introduction of the curvature factor 
+The amount of curvature along the extra dimension depends on the function $e^{-A(y)}$, which is the warping factor. The procedure to find the solution for the function $A(y)$ involves the introduction of the curvature factor
 \begin{equation}
-	k^2 \equiv -\frac{\Lambda}{12 M^3_*}\,,
+k^2 = -\frac{\Lambda_5}{12 M^3_*}\,,
 \end{equation}
-relating the bulk cosmological constant $\Lambda$ and the 5-dimensional Planck scale $M_*$. According to the RS model, the effective scale of gravity --- that is the 4-dimensional Planck scale --- is found to be
+relating the bulk cosmological constant $\Lambda_5$ and the 5-dimensional Planck scale $M_*$. The bulk cosmological constant \cite{Csaki:2004ay} comes from the 5-dimensional Einstein action for gravity and it has units of mass to the fifth power, $[\Lambda_5]=M^5$; therefore, the curvature factor has units of mass, $[k] = \big(M^5/M^3\big)^{1/2} = M$. Furthermore, a solution of the Einstein equation can only exist if the bulk cosmological constant is negative $\Lambda_5 < 0$. 
+
+According to the RS model, the effective scale of gravity --- that is the 4-dimensional Planck scale --- is found to be
 \begin{equation}
-	M^2_{Pl} = M^3_* \int_{y=-r_c}^{y=r_c} e^{-2k|y|} \, dy = \frac{M^3_*}{k} \left(1 - e^{-2kr_c} \right) \,.
+M^2_{Pl} = M^3_* \int_{y=-r_c}^{y=r_c} e^{-2k|y|} \, dy = \frac{M^3_*}{k} \left(1 - e^{-2kr_c} \right) \,.
 \end{equation}
-For large values of the compactification radius $r_c$, the 4-dimensional Planck scale barely depends on the size of the extra dimension. This means that an exponential hierarchy between the weak and the Planck scales in naturally introduced, providing a solution to the hierarchy problem of the standard model.
+For large values of the compactification radius $r_c$, the 4-dimensional Planck scale barely depends on the size of the extra dimension. This means that an exponential hierarchy between the weak and the Planck scales is naturally introduced, providing a solution to the hierarchy problem of the standard model.
 
 \subsection{Bulk Graviton Model}
 The solution to the hierarchy problem of the standard model through the Randall-Sundrum model with a warped extra dimension  invokes the existence of new particles at the TeV scale. A key feature of the bulk graviton model \cite{Agashe:2007zd} is the propagation of the standard model fields in the extra dimension. As such, the standard model particles are identified with the zero-modes of the 5-dimensional fields. Provided that the new resonances have non-negligible coupling to the standard model particles, new signals might be observed at the LHC. Spin-2 gravitons, whose masses and couplings are set by the TeV scale, would appear in experiments as widely separated resonances. 
@@ -396,19 +393,29 @@ The bulk graviton extension of the original Randall-Sundrum model predicts a hig
 
 The golden channel in the bulk graviton model is $G\rightarrow Z_L Z_L$, where $Z_L$ indicates the longitudinal component of the vector boson. The partial decay width of this channel is given by
 \begin{equation}
-	\Gamma(G\rightarrow Z_L Z_L) \approx \frac{(c \, x_n^G)^2 \, m^G_n}{960 \pi}\,,
+\Gamma(G\rightarrow Z_L Z_L) \approx \frac{(c \, x_n^G)^2 \, m^G_n}{960 \pi}\,,
 \label{larg:grav}
 \end{equation}
-where $c\equiv k/\overline{M}_{Pl}$, and $x^G_n = $ 3.83, 7.02, 10.17, and 13.32 gives masses of the first 4 Kaluza-Klein gravitons:
+where $c\equiv k/\overline{M}_{Pl}$, and the roots of the Bessel function of order 1, $x^G_n = $ 3.83, 7.02, 10.17, 13.32, give the masses of the first 4 Kaluza-Klein gravitons:
 \begin{equation}
-	m^G_n = k \; e^{k\pi R} \; x^G_n\,.
+m^G_n = k \; e^{-k\pi R} \; x^G_n\,,
 \end{equation}
-The production cross section for the bulk graviton with $k/M_{Pl} = 0.1$ is shown in Fig. \ref{bulkgrav}. These calculations where obtained with MG5\_aMC@NLO \cite{Alwall:2011uj} as reported in Ref. \cite{Oliveira:2014kla}. The natural width of a bulk graviton with these characteristics is less than 0.1\%, which is negligible with respect to the experimental detector resolution. For the experimental analysis we will use simulated samples with $k/M_{Pl} = 0.5$, increasing the graviton width to 1.5\%. 
+where $k$ is the curvature scale and $R$ is the proper size of the extra dimension.
+
+The production cross section for the bulk graviton with $k/M_{Pl} = 0.1$ is shown in Fig. \ref{bulkgrav}. These calculations where obtained with MG5\_aMC@NLO \cite{Alwall:2011uj} as reported in Ref. \cite{Oliveira:2014kla}. The natural width of a bulk graviton with these characteristics is less than 0.1\% of its mass, which is negligible with respect to the experimental detector resolution. For the experimental analysis we will use simulated samples with $k/M_{Pl} = 0.5$, increasing the graviton width to 1.5\%. 
 
 \begin{figure}[htb!!]
 \centering
-\includegraphics[scale=0.45]{figures/theory/bulkgrav.png}
-\caption[Bulk Graviton cross section]{Production cross section for the bulk graviton scenario \cite{Oliveira:2014kla}.}
+\includegraphics[width=0.75\textwidth]{figures/theory/bulkgrav.png}
+\caption[Bulk Graviton cross section]{Production cross section for the bulk graviton scenario \cite{Oliveira:2014kla}. The red curve corresponds to the inclusive production, the green curve to the associated production with two jets, the blue curve to the associated production with a vector boson, and the magenta curve to the photon-fusion production. NLO (LO) calculations are shown in continuous (dashed) lines.} 
 \label{bulkgrav}
 \end{figure}
 
+The most stringent limits to date on the bulk graviton signal strength are shown in Fig. \ref{latestLimits}, in the mass range 0.6 to 4.0 TeV. As observed in the figure, the sensitivity arises mainly from the 4q and 2q$\ell\nu$ channels.
+
+\begin{figure}[htb!!]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/theory/CMS-B2G-16-007_Figure_003.pdf}
+\caption[Latest limits]{Exclusion limits at 95\% CL on the signal strength in the bulk graviton model with $\tilde{k}=0.5$, as function of the resonance mass, obtained by combining 8 and 13 TeV diboson searches \cite{Sirunyan:2017nrt}.}
+\label{latestLimits}
+\end{figure}

@@ -179,6 +179,7 @@
 \input 4_cap3.tex
 \input 5_strategy.tex
 \input 6_realdata.tex
+%\input 7_distributions.tex
 \input 8_bkgEstimation.tex
 \input 9_limits.tex
 \input 10_conclusion.tex
@@ -189,10 +190,10 @@
 \end{appendix}
 
 \newpage
-\bibliography{tese} 	% Use the bibliography.bib file for the bibliography
-\bibliographystyle{unsrt} 		% Use the plainnat style of referencing
+\bibliography{tese} 	% Use the tese.bib file for the bibliography
+%\bibliographystyle{unsrt} 		% Use the plainnat style of referencing
 
-%\bibliography{tese}{}
-%\bibliographystyle{plain}
-
+% Place the style in the directory of the thesis
+% curl -O https://golem.ph.utexas.edu/~distler/TeXstuff/utphys.bst
+\bibliographystyle{utphys}
 \end{document}
